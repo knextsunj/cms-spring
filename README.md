@@ -48,7 +48,7 @@ Enter the password and login. Then:
 <br>	
   createdb cms
 <br>	
-The above command would automatically create the cms database.Now the DB schema script is in src/main/resources/db-scripts folder.Run this using Squirrel SQL IDE and set up the DB tables.
+The above command would automatically create the cms database.Now the DB schema script is in db-scripts folder.Run this using Squirrel SQL IDE and set up the DB tables.
 <br>     
 The above steps should be similar if you use another Unix based system such as Linux or Mac OS X(Fink/MacPorts/Homebrew). If you are on Windows,please refer to the refer to the below link to install and configure postgresql:
  <br>    
