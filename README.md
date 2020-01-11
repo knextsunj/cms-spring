@@ -79,3 +79,6 @@ The above steps should be similar if you use another Unix based system such as L
 	http://localhost:8080/cms-backend/ 
 </p>
 
+<p>
+	 Please open an issue in this repository, if you find any difficulties.
+</p>
