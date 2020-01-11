@@ -4,6 +4,7 @@ Contact Management System - Spring version
 This repository contains a sample application for a contact management system intended to serve as an information system for personal information of all employees of a small business.
 
 <p>Technologies Stack:
+ <br> 
 Spring 5
 <br>  
 Hibernate 5
