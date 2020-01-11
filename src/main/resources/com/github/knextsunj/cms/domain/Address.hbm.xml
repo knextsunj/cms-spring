@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 10, 2019 9:04:38 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+ <class name="com.github.knextsunj.cms.domain.Address" table="address">
+  <id access="field" name="id" type="java.lang.Long">
+   <column name="id"/>
+   <generator class="identity"/>
+  </id>
+  <property generated="never" lazy="false" name="addrLine1" type="java.lang.String">
+   <column name="addrLine1"/>
+  </property>
+  <property generated="never" lazy="false" name="addrLine2" type="java.lang.String">
+   <column name="addrLine2"/>
+  </property>
+  <property generated="never" lazy="false" name="addrLine3" type="java.lang.String">
+   <column name="addrLine3" />
+  </property>
+  <many-to-one class="com.github.knextsunj.cms.domain.City" fetch="join" name="city">
+   <column name="city_id"/>
+  </many-to-one>
+  <many-to-one class="com.github.knextsunj.cms.domain.State" fetch="join" name="state">
+   <column name="state_id"/>
+  </many-to-one>
+  <many-to-one class="com.github.knextsunj.cms.domain.AddressType" fetch="join" name="addressType">
+   <column name="address_type_id" />
+     </many-to-one>
+     <many-to-one class="com.github.knextsunj.cms.domain.Contact" fetch="join" name="contact">
+   <column name="contact_id" />
+  </many-to-one>
+      <property name ="createdDate" column = "created_date" type="LocalDateTime" />
+	<property name ="updatedDate" column = "updated_date" type="LocalDateTime" />
+ </class>
+</hibernate-mapping>

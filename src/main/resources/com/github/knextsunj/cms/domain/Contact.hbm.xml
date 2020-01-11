@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 10, 2019 9:04:38 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+	<class name="com.github.knextsunj.cms.domain.Contact" table="CONTACT">
+		<id name="id" type="java.lang.Long" access="field">
+			<column name="id" />
+			<generator class="identity">
+			</generator>
+		</id>
+		<property name="name" type="java.lang.String">
+			<column name="name" />
+		</property>
+		<property name="emailAddress" type="java.lang.String">
+			<column name="email_address" />
+		</property>
+		<!-- <many-to-one name="anniversary" class="com.eventsinc.cms.domain.Anniversary" 
+			fetch="join"> -->
+		<!-- <column name="ANNIVERSARY" /> -->
+		<!-- </many-to-one> -->
+		<component name="anniversary" class="com.github.knextsunj.cms.domain.Anniversary">
+			<property name="dateOfBirth" type="LocalDate"
+				column="dob" />
+			<property name="anniversaryDate" type="LocalDate" column="anniversary" />
+		</component>
+
+		<set name="addresses" inverse="false" table="address"
+			lazy="true" access="field">
+			<key>
+				<column name="id" />
+			</key>
+			<one-to-many class="com.github.knextsunj.cms.domain.Address" />
+		</set>
+	<property name ="createdDate" column = "created_date" type="LocalDateTime" />
+	<property name ="updatedDate" column = "updated_date" type="LocalDateTime" />
+	</class>
+</hibernate-mapping>

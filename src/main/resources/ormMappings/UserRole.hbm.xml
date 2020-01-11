@@ -1,0 +1,22 @@
+<!-- <?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+Generated Nov 10, 2019 9:04:38 PM by Hibernate Tools 3.5.0.Final
+<hibernate-mapping>
+    <class name="com.eventsinc.cms.domain.UserRole" table="USERROLE">
+        <id name="id" type="java.lang.Long" access="field">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="role" type="java.lang.String">
+            <column name="ROLE" />
+        </property>
+        <set name="addresses" table="USER" inverse="false" lazy="true" access="field">
+            <key>
+                <column name="ID" />
+            </key>
+            <one-to-many class="com.eventsinc.cms.domain.User" />
+        </set>
+    </class>
+</hibernate-mapping>
+ -->

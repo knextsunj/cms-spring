@@ -1,0 +1,25 @@
+<!-- <?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+Generated Nov 10, 2019 9:04:38 PM by Hibernate Tools 3.5.0.Final
+<hibernate-mapping>
+    <class name="com.eventsinc.cms.domain.UserPrivileges" table="USERPRIVILEGES">
+        <id name="id" type="java.lang.Long">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="user" class="com.eventsinc.cms.domain.User" fetch="join">
+            <column name="USER" />
+        </many-to-one>
+        <many-to-one name="privileges" class="com.eventsinc.cms.domain.Privileges" fetch="join">
+            <column name="PRIVILEGES" />
+        </many-to-one>
+        <property name="createdOn" type="java.util.Date">
+            <column name="CREATEDON" />
+        </property>
+        <property name="modifiedOn" type="java.util.Date">
+            <column name="MODIFIEDON" />
+        </property>
+    </class>
+</hibernate-mapping>
+ -->
