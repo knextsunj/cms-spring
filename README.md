@@ -77,6 +77,10 @@ The above steps should be similar if you use another Unix based system such as L
 	Once the application is successfully launched, you should see the welcome page:
 <br> 
 	http://localhost:8080/cms-backend/ 
+<br>
+9. The POSTMAN JSON collection is available in the file cms.postman_collection.json .You can use this to test drive the
+    APIs.
+	
 </p>
 
 <p>
