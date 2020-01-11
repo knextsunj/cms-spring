@@ -1,0 +1,84 @@
+{
+	"variables": [],
+	"info": {
+		"name": "cms",
+		"_postman_id": "80867e87-9b3a-e7d0-f3dd-0ae4735298d2",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Contact-Save",
+			"request": {
+				"url": "http://localhost:8080/cms-backend/app/contacts/new",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Jagannath Vakharia\",\n  \"emailAddress\": \"jvakaria25@aol.com\",\n  \"dateOfBirth\": \"24/05/1978\",\n  \"anniversaryDate\": \"16/06/2009\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "ping",
+			"request": {
+				"url": "http://localhost:8080/cms-backend/app/contacts/test",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Contact-Update",
+			"request": {
+				"url": "http://localhost:8080/cms-backend/app/contacts/update",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":2,\n    \"name\": \"Samuel John DeSilva\",\n  \"emailAddress\": \"samjohndsilva@yahoo.com\",\n  \"dateOfBirth\": \"21/09/1941\",\n  \"anniversaryDate\": \"06/07/1992\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "fetch-all-contacts",
+			"request": {
+				"url": "http://localhost:8080/cms-backend/app/contacts/all",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Contact-delete",
+			"request": {
+				"url": "http://localhost:8080/cms-backend/app/contacts/erase/15",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
