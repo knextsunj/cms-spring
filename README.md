@@ -26,10 +26,10 @@ Please note that this project DOES NOT USE SPRING BOOT. It is a traditional web 
 </p>
 
 <p>
-To run this project,you would need to do the following:
 <br>	
 <br>	
 1.Have Git,Postman,maven 3,JDK 8,Eclipse 4.12 or newer,Tomcat 9,Squirrel-sql and Postgresql 11 installed.You can also use any other Eclipse version or Eclipse based IDE or Netbeans/IntelliJ provided Tomcat 9 is supported.
+  You can also use another database such as MySQL or Oracle in place of Postgres but you would need to update the dependencies,DB script and configuration accordingly.
 <br>	
 <br> 
 2.Clone this repo to your workstation/laptop/desktop using Git.
