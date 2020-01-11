@@ -29,9 +29,7 @@ Please note that this project DOES NOT USE SPRING BOOT. It is a traditional web 
 To run this project,you would need to do the following:
 <br>	
 <br>	
-<p>	
 1.Have Git,Postman,maven 3,JDK 8,Eclipse 4.12 or newer,Tomcat 9,Squirrel-sql and Postgresql 11 installed.You can also use any other Eclipse version or Eclipse based IDE or Netbeans/IntelliJ provided Tomcat 9 is supported.
-</p>	
 <br>	
 <br> 
 2.Clone this repo to your workstation/laptop/desktop using Git.
@@ -64,6 +62,7 @@ The above steps should be similar if you use another Unix based system such as L
 <br> 
 <br> 
 6. Run the following maven command in Eclipse to build the project:
+<br>
      mvn clean install
 <br>     
 <br> 
